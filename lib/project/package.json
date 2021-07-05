@@ -1,0 +1,32 @@
+{
+  "name": "simple-rtg",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject",
+    "prettier:check": "prettier --check 'src/**/*.ts'",
+    "prettier:lint": "prettier --write 'src/**/*.ts'",
+    "eslint:check": "eslint . --ext .ts --format table",
+    "eslint:lint": "eslint . --ext .ts --quiet --fix",
+    "lint:check": "npm-run-all prettier:check eslint:check",
+    "lint": "npm-run-all prettier:lint eslint:lint"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
